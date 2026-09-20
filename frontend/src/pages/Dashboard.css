@@ -1,0 +1,331 @@
+/* ==========================================
+   GLOBAL DASHBOARD
+========================================== */
+
+.dashboard-container {
+    min-height: 100vh;
+    background: #f4f7fb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 26px;
+}
+
+.dashboard-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #dc2626;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dashboard-header button:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.dashboard-content {
+    width: min(900px, calc(100% - 32px));
+    margin: 30px auto;
+}
+
+.dashboard-content h3 {
+    margin: 25px 0 16px;
+    color: #111827;
+    font-size: 22px;
+}
+
+.dashboard-content hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.rfq-form {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+}
+
+.rfq-form label {
+    display: block;
+    margin: 16px 0 7px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rfq-form input,
+.rfq-form textarea,
+.rfq-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    outline: none;
+    background: #ffffff;
+    color: #111827;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rfq-form input:focus,
+.rfq-form textarea:focus,
+.rfq-form select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.rfq-form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.rfq-form button,
+.quotation-section button {
+    margin-top: 18px;
+    margin-right: 8px;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.rfq-form button:hover,
+.quotation-section button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.rfq-form button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ==========================================
+   RFQ LIST AND CARDS
+========================================== */
+
+.rfq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.rfq-card {
+    margin-bottom: 18px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.rfq-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.09);
+}
+
+.rfq-card h4 {
+    margin: 0 0 14px;
+    color: #2563eb;
+    font-size: 20px;
+}
+
+.rfq-card p {
+    margin: 10px 0;
+    color: #4b5563;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.rfq-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.rfq-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.rfq-actions button:hover {
+    background: #1d4ed8;
+}
+
+.rfq-actions button:nth-child(2) {
+    background: #dc2626;
+}
+
+.rfq-actions button:nth-child(2):hover {
+    background: #b91c1c;
+}
+
+.rfq-actions button:nth-child(3) {
+    background: #059669;
+}
+
+.rfq-actions button:nth-child(3):hover {
+    background: #047857;
+}
+
+/* Buttons inside quotation cards */
+.rfq-card button {
+    margin-top: 12px;
+    margin-right: 8px;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.rfq-card button:hover {
+    background: #1d4ed8;
+}
+
+.rfq-card button:nth-of-type(2) {
+    background: #dc2626;
+}
+
+.rfq-card button:nth-of-type(2):hover {
+    background: #b91c1c;
+}
+
+/* ==========================================
+   QUOTATIONS
+========================================== */
+
+.quotation-section {
+    margin-top: 32px;
+    padding-top: 8px;
+}
+
+.quotation-section > h3 {
+    margin-bottom: 18px;
+}
+
+.quotation-section > button {
+    background: #6b7280;
+}
+
+.quotation-section > button:hover {
+    background: #4b5563;
+}
+
+/* ==========================================
+   STATUS MESSAGES
+========================================== */
+
+.error-message,
+.success-message {
+    padding: 11px 14px;
+    border-radius: 7px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.error-message {
+    color: #b91c1c;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+}
+
+.success-message {
+    color: #15803d;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 600px) {
+    .dashboard-header {
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .dashboard-header h2 {
+        font-size: 21px;
+    }
+
+    .dashboard-header button {
+        padding: 9px 13px;
+    }
+
+    .dashboard-content {
+        width: calc(100% - 24px);
+        margin: 20px auto;
+    }
+
+    .rfq-form,
+    .rfq-card {
+        padding: 18px;
+    }
+
+    .rfq-actions {
+        flex-direction: column;
+    }
+
+    .rfq-actions button {
+        width: 100%;
+    }
+
+    .rfq-card button {
+        margin-right: 5px;
+    }
+}
